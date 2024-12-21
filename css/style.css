@@ -1,0 +1,10 @@
+@import url('base.css');
+@import url('variables.css');
+
+h1 {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+p {
+  color: var(--primary-color);
+}
