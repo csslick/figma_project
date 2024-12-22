@@ -29,3 +29,15 @@ header nav ul li {
   display: inline;
   margin-left: 40px;
 }
+
+.main-visual {
+  background-color: var(--primary-color);
+}
+
+.main-visual .container {
+  padding-top: 105px;
+  padding-bottom: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
