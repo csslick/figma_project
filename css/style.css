@@ -3,6 +3,9 @@
 
 /* PC용 스타일 */
 @media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
   .container {
     /* width: 1240px; */
     width: 100%;
@@ -107,13 +110,18 @@
 /* Mobile용 스타일 */
 @media (max-width: 767px) {
   body {
-    background-color: pink;
+    /* background-color: pink; */
   }
+
+  .toggle {
+    background-color: transparent;
+    border: none;
+  }
+
   .container {
     /* width: 1240px; */
     width: 100%;
-    min-width: 1000px;
-    max-width: 1400px;
+    max-width: 767px;
     /* background: #ccc; */
     margin: 0 auto;
     padding-left: 20px;
@@ -125,6 +133,10 @@
     border-bottom: 1px solid rgba(0,0,0, 0.25);
   }
   
+  header nav ul {
+    display: none;
+  }
+
   header nav a {
     color: black;
   }
@@ -157,17 +169,21 @@
     justify-content: center;
     align-items: center;
   }
+
+  .main-visual img {
+    width: 80%;
+  }
   
   #portfolio .container {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; */
   }
   
   #portfolio .container li {
     /* border: 2px solid red; */
     /* width: 25%; */
-    width: calc((100% - 20px * 3) / 4);
+    /* width: calc((100% - 20px * 3) / 4); */
     margin-bottom: 40px;
   }
   
@@ -180,7 +196,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
     text-transform: uppercase;
-    font-size: 36px;
+    font-size: 20px;
     letter-spacing: calc(36px / 2); /* 50% */
   }
   
